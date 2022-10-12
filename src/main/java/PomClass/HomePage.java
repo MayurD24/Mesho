@@ -15,6 +15,11 @@ public class HomePage extends Util1 {
 	@FindBy(xpath = "//input[@type='text']")
 	private WebElement searchBox;
 	
+	@FindBy(xpath = "//div[@class='sc-dkPtyc ProductList__GridCol-sc-8lnc8o-0 dqIYJu ilkWHh']")
+	private WebElement firstProduct;
+	
+	@FindBy(xpath = "//h1[@class='ProductListingContent__HeadLine1-e96brm-0 bCPTzp']")
+	private WebElement searchHeader;
 	
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver,this);
@@ -27,5 +32,9 @@ public class HomePage extends Util1 {
 		searchBox.sendKeys(Keys.ENTER);
 	}
 	
+	public String getFilterText() {
+		waitTillElementVisible(driver,firstProduct);
+		return searchHeader.getText();
+	}
 	
 }

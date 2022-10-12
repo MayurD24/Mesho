@@ -4,13 +4,16 @@
     <line>
       <![CDATA[Test Started]]>
     </line>
+    <line>
+      <![CDATA[Test Passed]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-10-10T23:17:48 IST" name="Suite" finished-at="2022-10-10T23:18:01 IST" duration-ms="12895">
+  <suite started-at="2022-10-12T13:22:20 IST" name="Suite" finished-at="2022-10-12T13:22:32 IST" duration-ms="12201">
     <groups>
     </groups>
-    <test started-at="2022-10-10T23:17:48 IST" name="ChromeTest" finished-at="2022-10-10T23:18:01 IST" duration-ms="12895">
+    <test started-at="2022-10-12T13:22:20 IST" name="ChromeTest" finished-at="2022-10-12T13:22:32 IST" duration-ms="12201">
       <class name="TestClass.verifyUserCanSearchProduct">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:TestClass.verifyUserCanSearchProduct@16293aa2]" started-at="2022-10-10T23:17:48 IST" name="beforeClass" finished-at="2022-10-10T23:17:59 IST" duration-ms="11028" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:TestClass.verifyUserCanSearchProduct@5158b42f]" started-at="2022-10-12T13:22:20 IST" name="beforeClass" finished-at="2022-10-12T13:22:29 IST" duration-ms="9508" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,22 +24,32 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:TestClass.verifyUserCanSearchProduct@16293aa2]" started-at="2022-10-10T23:17:59 IST" name="beforeTest" finished-at="2022-10-10T23:17:59 IST" duration-ms="85" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:TestClass.verifyUserCanSearchProduct@5158b42f]" started-at="2022-10-12T13:22:29 IST" name="beforeTest" finished-at="2022-10-12T13:22:29 IST" duration-ms="58" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="verifyUserCanSearchProducts()[pri:0, instance:TestClass.verifyUserCanSearchProduct@16293aa2]" started-at="2022-10-10T23:17:59 IST" name="verifyUserCanSearchProducts" finished-at="2022-10-10T23:18:00 IST" duration-ms="537" status="PASS">
+        <test-method signature="verifyUserCanSearchProducts()[pri:0, instance:TestClass.verifyUserCanSearchProduct@5158b42f]" started-at="2022-10-12T13:22:30 IST" name="verifyUserCanSearchProducts" finished-at="2022-10-12T13:22:32 IST" duration-ms="2015" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test Started]]>
             </line>
+            <line>
+              <![CDATA[Test Passed]]>
+            </line>
           </reporter-output>
         </test-method> <!-- verifyUserCanSearchProducts -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestClass.verifyUserCanSearchProduct@16293aa2]" started-at="2022-10-10T23:18:00 IST" name="afterTest" finished-at="2022-10-10T23:18:00 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:TestClass.verifyUserCanSearchProduct@5158b42f]" started-at="2022-10-12T13:22:32 IST" name="afterTest" finished-at="2022-10-12T13:22:32 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserCanSearchProducts status=SUCCESS method=verifyUserCanSearchProduct.verifyUserCanSearchProducts()[pri:0, instance:TestClass.verifyUserCanSearchProduct@5158b42f] output=Test Started]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestClass.verifyUserCanSearchProduct@16293aa2]" started-at="2022-10-10T23:18:00 IST" name="afterClass" finished-at="2022-10-10T23:18:01 IST" duration-ms="1182" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestClass.verifyUserCanSearchProduct@5158b42f]" started-at="2022-10-12T13:22:32 IST" name="afterClass" finished-at="2022-10-12T13:22:32 IST" duration-ms="565" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
