@@ -33,7 +33,7 @@ public class Util1 {
 		return wait.until(ExpectedConditions.visibilityOfElementLocated((By) element));
 	}
 	
-	public static List<WebElement> waitTillElementVisible1(WebDriver driver, WebElement element) {
+	public static List<WebElement> waitTillAllElementVisible(WebDriver driver, WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 		return wait.until(ExpectedConditions.visibilityOfAllElements(element));
 	}
