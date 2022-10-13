@@ -1,6 +1,10 @@
 package TestClass;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -10,10 +14,13 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 import BaseClass.Base1;
 import PomClass.HomePage;
+import UtilClass.Util1;
 
 public class verifyUserCanSearchProduct {
 
@@ -43,11 +50,16 @@ public class verifyUserCanSearchProduct {
 	@Test
 	public void verifyUserCanSearchProducts() {
 		hp.searchProduct();
+		String ActualText = hp.getFilterText();
+		Assert.assertEquals(ActualText, "mens shoes");
 	}
 	
 	@AfterMethod
-	public void afterTest() {
-		
+	public void afterTest(ITestResult result) throws IOException {
+		if(result.getStatus() == ITestResult.FAILURE) {
+			String path = Util1.getScreenshot(driver, result.getName());
+			extentTest.log(Status.FAIL, result.getName(), MediaEntityBuilder.createScreenCaptureFromPath(path).build());
+		}
 	}
 	
 	@AfterClass
