@@ -17,7 +17,7 @@ public class Listener implements ITestListener {
 
 	public void onTestStart(ITestResult result) {
 		extentTest = Base1.getAlreadyExistingTest();
-		extentTest.log(Status.INFO, "Test : Started " + result.getName());
+		extentTest.log(Status.INFO, "Test Started : " + result.getName());
 		System.out.println("Test Started " + result.getName());
 		Reporter.log("Test Started");
 	}

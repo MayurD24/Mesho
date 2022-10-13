@@ -50,8 +50,9 @@ public class verifyUserCanSearchProduct {
 	@Test
 	public void verifyUserCanSearchProducts() {
 		hp.searchProduct();
+		hp = new HomePage(driver);
 		String ActualText = hp.getFilterText();
-		Assert.assertEquals(ActualText, "mens shoes");
+		Assert.assertEquals(ActualText, "Category");
 	}
 	
 	@AfterMethod
